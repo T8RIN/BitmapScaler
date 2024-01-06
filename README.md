@@ -14,14 +14,14 @@ This BitmapScaler with different scaling algorhytms based on jxl-coder from awxk
 
 # Add Jitpack repository
 
-```groovy
+```kotlin
 repositories {
-    maven { url "https://jitpack.io" }
+    maven { setUrl("https://jitpack.io") }
 }
 ```
 
-```groovy
-implementation 'com.github.t8rin:bitmapscaler:1.0.0'
+```kotlin
+implementation("com.github.t8rin:bitmapscaler:1.0.0")
 ```
 
 # Self-build
