@@ -3,6 +3,20 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("maven-publish")
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("mavenJava") {
+                groupId = "com.github.t8rin"
+                artifactId = "bitmap-scaler"
+                version = "1.0.1"
+                from(components["release"])
+            }
+        }
+    }
 }
 
 android {
