@@ -197,7 +197,7 @@ inline T sinc(T x) {
     if (x == 0.0) {
         return T(1.0);
     } else {
-        return fastSin2(x) / x;
+        return sin(x) / x;
     }
 }
 
@@ -234,7 +234,7 @@ template<typename T>
 inline T HannWindow(T x, const T length) {
     const float size = length * 2 - 1;
     if (abs(x) <= size) {
-        return 0.5f * (1 - fastCos(T(2) * T(M_PI) * size / length));
+        return 0.5f * (1 - cos(T(2) * T(M_PI) * size / length));
     }
     return T(0);
 }
