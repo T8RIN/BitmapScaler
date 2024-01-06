@@ -21,7 +21,7 @@ repositories {
 ```
 
 ```groovy
-implementation 'com.t8rin.bitmapscaler:bitmapscaler:1.0.0' // or any version above picker from release tags
+implementation 'com.github.t8rin:bitmapscaler:1.0.0' // or any version above picker from release tags
 ```
 
 # Self-build
