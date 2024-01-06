@@ -2,7 +2,7 @@
 
 This BitmapScaler with different scaling algorhytms based on jxl-coder from awxkee can upscale or downscale bitmaps with 8 options:
 * Bilinear
-* Nearest
+* Nearest Neighbour
 * Bicubic
 * Mitchell
 * Lanczos
