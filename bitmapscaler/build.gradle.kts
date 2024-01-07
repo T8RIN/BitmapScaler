@@ -12,7 +12,7 @@ afterEvaluate {
             create<MavenPublication>("mavenJava") {
                 groupId = "com.github.t8rin"
                 artifactId = "bitmap-scaler"
-                version = "1.0.3"
+                version = "1.0.4"
                 from(components["release"])
             }
         }
@@ -28,9 +28,16 @@ android {
 
         externalNativeBuild {
             cmake {
-                ndkVersion = "25.2.9519653"
-                cppFlags.add ("-std=c++17")
+                ndkVersion = "26.1.10909125"
+                cppFlags.add("-std=c++20")
                 abiFilters += setOf("armeabi-v7a", "arm64-v8a", "x86_64", "x86")
+            }
+        }
+
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+                withJavadocJar()
             }
         }
     }
