@@ -2,13 +2,13 @@
 
 This BitmapScaler with different scaling algorhytms based on jxl-coder from awxkee can upscale or downscale bitmaps with 8 options:
 * Bilinear
-* Nearest
-* Cubic
+* Nearest Neighbour
+* Bicubic
 * Mitchell
 * Lanczos
-* CatmullRom
+* Catmull
 * Hermite
-* BSpline
+* Spline
 * Hann
 
 
@@ -21,7 +21,7 @@ repositories {
 ```
 
 ```kotlin
-implementation("com.github.t8rin:bitmap-scaler:1.0.0")
+implementation("com.github.t8rin:bitmap-scaler:1.0.2")
 ```
 
 # Self-build
