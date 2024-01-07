@@ -91,7 +91,7 @@ Java_com_t8rin_bitmapscaler_BitmapScaler_scaleImpl(JNIEnv *env, jobject thiz, jo
 
 
     if (useFloat16) {
-        scaleImageFloat16(
+        coder::scaleImageFloat16(
                 reinterpret_cast<uint16_t *>(rgbPixels.data()),
                 imageStride,
                 info.width,
@@ -104,7 +104,7 @@ Java_com_t8rin_bitmapscaler_BitmapScaler_scaleImpl(JNIEnv *env, jobject thiz, jo
                 static_cast<XSampler>(scale_mode)
         );
     } else {
-        scaleImageU8(
+        coder::scaleImageU8(
                 rgbPixels.data(),
                 imageStride,
                 info.width,
