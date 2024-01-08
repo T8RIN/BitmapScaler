@@ -12,7 +12,7 @@ afterEvaluate {
             create<MavenPublication>("mavenJava") {
                 groupId = "com.github.t8rin"
                 artifactId = "bitmap-scaler"
-                version = "1.1.0"
+                version = "1.1.2"
                 from(components["release"])
             }
         }
