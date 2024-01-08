@@ -21,7 +21,7 @@ repositories {
 ```
 
 ```kotlin
-implementation("com.github.t8rin:bitmap-scaler:1.0.2")
+implementation("com.github.t8rin:bitmap-scaler:1.1.1")
 ```
 
 # Self-build
